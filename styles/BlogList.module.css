@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;  
+  border-top: 1px solid #333;
+}
+
+
+.middle {
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  margin: 100px 0 20px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+.contentContainer {
+  box-sizing: border-box;
+  width: 70%;
+  background-color:#f0f8ff;
+  overflow: hidden;
+  margin: 10% auto;
+  transition: all .5s ;
+  position: relative;
+}
+
+.contentContainer:hover {
+  transform: translateY(-10%);
+  box-shadow: 2px 6px 5px 2px #dadada; 
+}
+
+.mainImage {
+  width: 100%;
+}
+
+.preview {
+  color: #333;
+  text-align: left;
+  font-family:  Georgia, 'Times New Roman', Times, serif ;
+  padding: 10px;
+}
+
+.box {
+  color: #333;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.addInfo {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+
+  .contentContainer {
+    width: 80%;
+    outline: none;
+  }
+}
