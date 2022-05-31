@@ -22,15 +22,15 @@
 .contentContainer {
   box-sizing: border-box;
   width: 70%;
-  background-color:#f0f8ff;
+  background-color:#fff8f0;
   overflow: hidden;
   margin: 10% auto;
-  transition: all .5s ;
+  transition: all .3s ;
   position: relative;
 }
 
 .contentContainer:hover {
-  transform: translateY(-10%);
+  transform: translateY(-5%);
   box-shadow: 2px 6px 5px 2px #dadada; 
 }
 

@@ -1,8 +1,9 @@
 import styles from '../styles/Section.module.css';
+import quotes from '../services/quotes'
 import Link from 'next/link';
 
-export default function Section({ slug, _id, mainImage, title, tag, author, createdAt }) {
-
+export default function Section({ slug, _id, mainImage, title, tag, author, createdAt }) { 
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   return (
     <section className={styles.container}>
       <div className={styles.screen}>
@@ -12,13 +13,9 @@ export default function Section({ slug, _id, mainImage, title, tag, author, crea
           <span className={styles.sentence}>Thinking about Startup, Investment,<br/></span>
           <span className={styles.sentence}>Technology, Blockchain and Life.</span>
         </h1>
-        <p>
-          {`스티브 잡스, 아인슈타인, 체 게바라를 좋아하고 존경합니다. `}
-        </p>
-        <p> 
-          {`인생을 걸 수 있는 일을 찾아 헌신하고, 사람들에게 기억되는 삶을 살고 싶습니다. `}
-        </p>
-        <p>{`하루하루 공부하고, 사람들을 만나고, 스스로를 돌아보며 성장하고 있습니다.`}</p>
+        <div className={styles.quotebox}>      
+          <p className={styles.quote}>{randomQuote.quote}</p>
+          <p className={styles.person}> - {randomQuote.person}</p></div>
         </div>
         <Link 
           key={_id} 
