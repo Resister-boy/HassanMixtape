@@ -15,7 +15,7 @@ export default function Section({ slug, _id, mainImage, title, tag, author, crea
         </h1>
         <div className={styles.quotebox}>      
           <p className={styles.quote}>{randomQuote.quote}</p>
-          <p className={styles.person}> - {randomQuote.person}</p></div>
+          <p className={styles.person}> - {randomQuote.person} - </p></div>
         </div>
         <Link 
           key={_id} 
