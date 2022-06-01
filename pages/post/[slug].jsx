@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 
-  const {  } = params; 
+  const { slug } = params; 
   
   const posts = await new SanityService().getPosts();
   const post = posts.find((p) => p.slug === slug);
